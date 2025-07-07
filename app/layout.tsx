@@ -20,7 +20,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "DSFS - Decentralized Student Fund System",
   description:
-    "Empowering Education with AI & Blockchain. The Decentralized Student Fund System (DSFS) connects students with donors transparently, fairly, and instantly—powered by Stellar Blockchain and AI.",
+    "Empowering Education with Blockchain. The Decentralized Student Fund System (DSFS) connects students with donors transparently, fairly, and instantly—powered by Stellar Blockchain and AI.",
   keywords: [
     "decentralized student funding",
     "AI-powered education finance",

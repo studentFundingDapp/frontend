@@ -28,8 +28,6 @@ export function HeroSection() {
             }`}
           >
             <span className="text-white">Empowering Education with </span>
-            <span className="text-primary glow-text">AI</span>
-            <span className="text-white"> & </span>
             <span className="text-secondary glow-purple-text">Blockchain</span>
           </h1>
 
@@ -38,8 +36,8 @@ export function HeroSection() {
               isVisible ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
             }`}
           >
-            The Decentralized Student Fund System (DSFS) connects students with donors transparently, fairly, and
-            instantly—powered by Stellar Blockchain and AI.
+            The Decentralized Student Fund System (DSFS) connects students with donors directly, transparently, fairly, and
+            instantly—powered by Stellar Blockchain Technology.
           </p>
 
           <div
@@ -47,7 +45,11 @@ export function HeroSection() {
               isVisible ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
             }`}
           >
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow animate-pulse">
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow animate-pulse"
+              onClick={() => window.location.href = "https://dsfsbuildcheck.vercel.app/"}
+            >
               Join DSFS Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -55,6 +57,7 @@ export function HeroSection() {
               variant="outline"
               size="lg"
               className="border-silver/50 text-silver hover:border-silver hover:text-white"
+              onClick={() => window.location.href = "https://dsfsbuildcheck.vercel.app/"}
             >
               Donate Today
             </Button>

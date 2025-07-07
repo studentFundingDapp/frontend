@@ -55,7 +55,11 @@ export function CtaSection() {
                 inView ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
               }`}
             >
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow animate-pulse">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow animate-pulse"
+                onClick={() => window.location.href = "https://dsfsbuildcheck.vercel.app/role-selection"}
+              >
                 Sign Up Today
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -63,6 +67,7 @@ export function CtaSection() {
                 variant="outline"
                 size="lg"
                 className="border-silver/50 text-silver hover:border-silver hover:text-white"
+                onClick={() => window.location.href = "https://dsfsbuildcheck.vercel.app/role-selection"}
               >
                 Make an Impact—Donate Now
               </Button>

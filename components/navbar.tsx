@@ -46,10 +46,19 @@ export function Navbar() {
               Benefits
             </Link>
             <div className="flex items-center space-x-4">
-              <Button variant="outline" className="border-silver/50 text-silver hover:border-silver hover:text-white">
+              <Button
+                variant="outline"
+                className="border-silver/50 text-silver hover:border-silver hover:text-white"
+                onClick={() => window.location.href = "https://dsfsbuildcheck.vercel.app/"}
+              >
                 Donate Today
               </Button>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 glow">Join DSFS Now</Button>
+              <Button
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow"
+                onClick={() => window.location.href = "https://dsfsbuildcheck.vercel.app/"}
+              >
+                Join DSFS Now
+              </Button>
             </div>
           </nav>
 
@@ -91,10 +100,20 @@ export function Navbar() {
               <Button
                 variant="outline"
                 className="w-full border-silver/50 text-silver hover:border-silver hover:text-white"
+                onClick={() => {
+                  setIsMenuOpen(false)
+                  window.location.href = "https://dsfsbuildcheck.vercel.app/role-selection"
+                }}
               >
                 Donate Today
               </Button>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow">
+              <Button
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow"
+                onClick={() => {
+                  setIsMenuOpen(false)
+                  window.location.href = "https://dsfsbuildcheck.vercel.app/role-selection"
+                }}
+              >
                 Join DSFS Now
               </Button>
             </div>
